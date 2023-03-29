@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Greeting</title>
+	</head>
+<head>
+	<title>Greeting Message</title>
+	<script type="text/javascript">
+		function displayGreeting() {
+			var today = new Date();
+			var hour = today.getHours();
+			var greeting = "";
+			if (hour >= 0 && hour < 12) {
+				greeting = "Good Morning";
+			} else if (hour >= 12 && hour < 18) {
+				greeting = "Good Afternoon";
+			} else {
+				greeting = "Good Evening";
+			}
+			
+			var message = greeting +  "!";
+			document.getElementById("greeting").innerHTML = message;
+		}
+
+		function hideGreeting() {
+			document.getElementById("greeting").style.display = "none";
+		}
+	</script>
+</head>
+<body onload="displayGreeting();">
+	<div id="greeting" onclick="hideGreeting();"></div>
+</body>
+</html>

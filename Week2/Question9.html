@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Feedback</title>
+    </head>
+    <body>
+    <h1>User Feedback Form</h1>
+
+    <form action="Success.html">
+        <table>
+            <tr>
+                <td>Enter your name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+                <td>Enter your email:</td>
+                <td><input type="text" name="mail" ></td>
+            </tr>
+
+            <tr>
+                <td>What type of user are you?</td>
+                <td>
+                <label><input type="radio" name="user-type" value="student"> Student</label>
+                <label><input type="radio" name="user-type" value="teacher"> Teacher</label>
+                <label><input type="radio" name="user-type" value="other"> Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Which operating system do you use?</td>
+                <td>
+                <select name="os">
+                    <option value="windows">Windows</option>
+                    <option value="mac">Mac</option>
+                    <option value="linux">Linux</option>
+                    <option value="other">Other</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Which browser do you use?</td>
+                <td>
+                <label><input type="radio" name="browser" value="chrome"> Chrome</label>
+                <label><input type="radio" name="browser" value="firefox"> Firefox</label>
+                <label><input type="radio" name="browser" value="safari"> Safari</label>
+                <label><input type="radio" name="browser" value="edge"> Edge</label>
+                <label><input type="radio" name="browser" value="other"> Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>What feature(s) do you like about our software? </td>
+                <td>
+                <label><input type="checkbox" name="feature" value="ease-of-use"> Ease of Use</label>
+                <label><input type="checkbox" name="feature" value="functionality"> Functionality</label>
+                <label><input type="checkbox" name="feature" value="speed"> Speed</label>
+                <label><input type="checkbox" name="feature" value="design"> Design</label>
+                </td>
+            </tr>
+            <tr>
+                <td>What feature(s) do you dislike about our software? </td>
+                <td>
+                <label><input type="checkbox" name="dislike" value="bugs"> Bugs</label>
+                <label><input type="checkbox" name="dislike" value="performance"> Performance</label>
+                <label><input type="checkbox" name="dislike" value="interface"> Interface</label>
+                <label><input type="checkbox" name="dislike" value="lack-of-features"> Lack of features</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your feedback:</td>
+                <td>
+                <textarea name="comments" rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

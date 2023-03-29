@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercises</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .container{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.56)), url('image/bg4.jpg');
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+
+        h1{
+            margin-left: 650px;
+        }
+
+        div > ul{
+            list-style: none;
+            padding: 0;
+            width: 300px;
+            display: block;
+            float: right;
+            height: 40px;
+            padding: 10px 10px 10px 8px;
+        }
+
+        div> ul li{
+            float: left;
+            display: block;
+            margin: 5px;
+            float: left;
+            height: 20px;
+            padding: 1px 10px 10px 8px;
+            background-color: rgb(14, 175, 234);
+            box-shadow: 10px 10px 10px rgb(7, 1, 33);
+            color: black;
+        }
+
+        div> ul> a{
+            text-decoration: none;
+        }
+        
+        main {
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+         
+        section a {
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.5s ease;
+        }
+        
+        section .btnone {
+            /*background: #00b894;*/
+            background: #eec1c1c2;
+            color: #000;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btnone:hover {
+            background: #1c1c1d;
+            color: white;
+        }
+        
+        section .btntwo {
+            background: #1c1c1d;
+            color: white;
+            margin-left: 10px;
+        }
+        
+        .btntwo:hover {
+            background:  #eec1c1c2;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>CSS Exercises</u></h1>
+        <ul>
+            <a href="Exercises.html"><li>Home</li></a>
+            <a href="HtmlQuestions.html"><li>HTML Exercise </li></a>
+            <a href="JsQuestions.html"><li>Js Exercise </li></a>
+            
+        </ul>
+        <main>
+            <section>
+                <a href="Week3/Question15.html" class="btnone">Question 15</a>
+                <a href="Week3/Question16.html" class="btntwo">Question 16</a>
+                <a href="Week3/Question17.html" class="btnone">Question 17</a>
+                <a href="Week3/Question18.html" class="btntwo">Question 18</a><br><br><br>
+                <a href="Week3/Question19.html" class="btnone">Question 19</a>
+                <a href="Week3/Question20.html" class="btntwo">Question 20</a>
+                <a href="Week3/Question21.html" class="btnone">Question 21</a>
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>
