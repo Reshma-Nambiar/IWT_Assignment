@@ -2,72 +2,69 @@
     <head>
         <style>
             *{
-                box-sizing: border-box;
+                box-sizing:border-box;
             }
-
             .card{
-                width: 33%;
-                box-shadow: 2px 2px 4px black;
-                padding: 2px;
-                position: relative;
-                background-color: rgb(247, 239, 254);
-                box-shadow: 2px 2px 4px black;
+                width:33%;
+                background-color:rgb(89, 222, 74);
+                box-shadow:2px 2px 4px blue;
+                position:relative;
+                border:2px solid black;
+                margin:10px;
+                padding:10px;
+                height:500px;
             }
-
-            .card> img{
-                width: 100%;
-                height: 40%;
+            .card>img{
+                width:100%;
+                height:60%;
             }
-
-            .desc{
-                padding: 10px;
-            }
-
-            .desc > h2{
-                color: red;
-                font-size: 20px;
-                text-transform: uppercase;
-            }
-
-            .desc > p{
-                text-align: justify;
-                color: blue;
-            }
-
             .date{
-                background-color: rgba(32 66 12 0.8);
-                width: 30px;
-                color: white;
-                font-size: 20px;
-                position: absolute;
-                transform: rotate(-5 deg);
+                font-weight: bold;
+                font-family:cursive;
+                color:black;
+                font-size:30px;
+                position:absolute;
+                text-decoration: underline;
+                background-color:rgba(199, 96, 96, 0.7);
+                width:40%;
+                left:20px;
+                top:57%;
+                transform:rotate(-5deg);
             }
-
-            #display{
-                font-size: 50px;
+            .desc{
+                padding:10px;
+            }
+            .desc>h2{
+                color:red;
+                font-size:30px;
+                font-family:monospace;
+                text-transform:uppercase;
+                text-align:center;
+            }
+            .desc>p{
+                text-align:justify;
+                color:blue;
+                font-family:'Courier New', Courier, monospace;
             }
         </style>
     </head>
-
     <body>
-        <div style = 'display: flex; justify-content: space-evenly'>
-            <script>
-                images = ["4.jpg", "6.jpg", "2.jpg"];
-                title = ["a", "b", "c"];
-                intro = ["Image1", "Image2", "Image3"]
-                date=["23Nov", "12March", "15Dec"]
-                for(i=1; i<=3; i++){
-                    var card = "<div class = 'card'>"
-                                    + "<img src = ../images/" +images[i]+"/>"
-                                    + "<div class = 'date'>"+date[i]+ "</div>"
-                                    +  "<div class = 'desc'>"
-                                            +  "<h2>" +title[i]+ "</h2>"
-                                            +  "<p>" +intro[i]+ "</p>"
-                                    +  "</div>" 
-                                "</div>"
-                        document.write(card);
-                }
-            </script>
+        <div style="display:flex;justify-content:center;">
+        <script>
+            images=["7.jpg","14.jpg","18.jpg"];
+            titles=["Annual Function","Workshop","Guest lecture"];
+            intro=["This is first Event","This is second event","This is third event"];
+            dates=["12/12/2022","20/12/2022","25/12/2022"];
+            for(i=0;i<3;i++)
+            {
+                var card='<div class="card">'+
+                        '<img src="../images/'+images[i]+'" />'+'<div class="date">'+dates[i]+'</div>'+
+                        '<br><div class="desc">'+
+                            '<h2>'+titles[i]+'</h2>'+
+                            '<p>'+intro[i]+'</p></div></div>'
+                document.write(card);
+            }
+        </script>
         </div>
     </body>
 </html>
